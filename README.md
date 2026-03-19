@@ -7,31 +7,23 @@ To develop a convolutional autoencoder for image denoising application.
 
 
 ## DESIGN STEPS
-### STEP 1: 
+### Step 1 :Load and Preprocess Data
+Load the MNIST dataset and convert images into tensors using normalization.
 
-Write your own steps
+### Step 2 :Add Noise to Input Images
+Apply random noise to the input images using a noise function to simulate corrupted data.
 
-### STEP 2: 
+### Step 3 :Initialize Autoencoder Model
+Define the encoder (compression) and decoder (reconstruction) using convolutional layers.
 
+### Step 4 :Forward Propagation
+Pass the noisy images through the autoencoder to generate denoised output images.
 
+### Step 5 :Compute Loss and Update Weights
+Calculate the loss using Mean Squared Error between original and reconstructed images, then update weights using backpropagation and Adam optimizer.
 
-### STEP 3: 
-
-
-
-### STEP 4: 
-
-
-
-### STEP 5: 
-
-
-
-### STEP 6: 
-
-
-
-
+### Step 6 :Evaluate and Visualize Results
+Test the model on unseen data and display original, noisy, and denoised images for comparison.
 
 ## PROGRAM
 
@@ -178,11 +170,10 @@ visualize_denoising(model, test_loader)
 ### OUTPUT
 
 ### Model Summary
-
+<img src="Model Summary.png" />
 ### Training loss
-
+<img src="training.png"/>
 ## Original vs Noisy Vs Reconstructed Image
-Include a few sample images here.
-
+<img src="image.png"/>
 ## RESULT
-Include your result here
+Thus , convolutional autoencoder for image denoising application is successfully developed
