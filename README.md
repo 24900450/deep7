@@ -4,8 +4,13 @@
 To develop a convolutional autoencoder for image denoising application.
 
 ## Problem Statement and Dataset
+In many real-world applications, images are often corrupted by noise due to factors such as low lighting, sensor errors, or transmission disturbances. This noise reduces image quality and makes further processing or analysis difficult.
 
+To address this issue, a convolutional autoencoder model will be developed for image denoising. A convolutional autoencoder is a type of neural network that learns to compress input images into a lower-dimensional representation and then reconstruct them back to their original form.
 
+The model will be trained using pairs of noisy and clean images, allowing it to learn how to remove noise while preserving important features such as edges and textures. Convolutional layers help in effectively capturing spatial patterns in images.
+
+After training, the model will be tested on new noisy images to evaluate its ability to reconstruct clean images. The objective is to improve image quality by minimizing noise while maintaining essential visual details.
 ## DESIGN STEPS
 ### Step 1 :Load and Preprocess Data
 Load the MNIST dataset and convert images into tensors using normalization.
