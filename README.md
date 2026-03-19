@@ -170,10 +170,10 @@ visualize_denoising(model, test_loader)
 ### OUTPUT
 
 ### Model Summary
-<img src="Model Summary.png" />
+<img src="Model Summary.png" /><br>
 ### Training loss
-<img src="training.png"/>
+<img src="training loss.png"/><br>
 ## Original vs Noisy Vs Reconstructed Image
-<img src="image.png"/>
+<img src="image.png"/><br>
 ## RESULT
 Thus , convolutional autoencoder for image denoising application is successfully developed
